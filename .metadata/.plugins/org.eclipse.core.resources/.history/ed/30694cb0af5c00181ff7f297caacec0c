@@ -1,0 +1,24 @@
+package com.cts.oops.test;
+
+import com.cts.oops.getsetexample;
+
+public class getsetexampletest {
+	public void display(getsetexample a)
+	{
+		System.out.println(a.getName());
+		System.out.println(a.getNum());
+		System.out.println(a.getOcc());
+		}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		getsetexample a = new getsetexample();
+		a.setNum(100);
+		a.setName("shriraam");
+		a.setOcc("army");
+		
+		getsetexampletest ex = new getsetexampletest();
+		ex.display(a);
+		}
+
+}

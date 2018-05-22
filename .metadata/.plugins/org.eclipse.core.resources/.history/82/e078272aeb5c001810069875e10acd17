@@ -1,0 +1,7 @@
+package com.cts.serviceimpl;
+
+import com.cts.service.Employeeservice;
+
+public class Employeeserviceimpl implements Employeeservice {
+
+}

@@ -1,0 +1,20 @@
+package com.cts.service;
+
+public interface Employeeservice {
+		
+	Public Boolean addEmployee(Employee emp);
+		
+	Public Employee getEmployee(int id);
+		
+	Public List<Employee> getAllEmployees();
+		
+	Public List<Employee> getAllEmployees(int salary);
+		
+	Public List<Employee> getAllEmployees(int minSalary, int maxSalary);
+	
+	Public Boolean deleteEmployee(int id);
+
+	Public Boolean updateEmployee(Employee emp)
+
+
+}

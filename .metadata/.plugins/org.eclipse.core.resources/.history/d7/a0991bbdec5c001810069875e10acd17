@@ -1,0 +1,54 @@
+package com.cts.serviceimpl;
+
+import java.awt.List;
+
+import com.cts.bean.Employee;
+import com.cts.service.Employeeservice;
+
+public  class DepartmentServiceImpl implements Employeeservice {
+
+	@Override
+	public Boolean addEmployee(Employee emp) {
+		
+		return null;
+	}
+
+	@Override
+	public Employee getEmployee(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public List getAllEmployees() {
+		
+		return null;
+	}
+
+	@Override
+	public List getAllEmployees(int salary) {
+		
+		return null;
+	}
+
+	@Override
+	public List getAllEmployees(int minSalary, int maxSalary) {
+		
+		return null;
+	}
+
+	@Override
+	public Boolean deleteEmployee(int id) {
+		
+		return null;
+	}
+
+	@Override
+	public Boolean updateEmployee(Employee emp) {
+		
+		return null;
+	}
+
+	
+
+}

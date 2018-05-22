@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.cts.java.Bignum"/>
+    <fullyQualifiedTypeName name="com.cts.java.Factorial"/>
+    <fullyQualifiedTypeName name="com.cts.java.Grades"/>
+    <fullyQualifiedTypeName name="com.cts.java.StringLength"/>
+    <fullyQualifiedTypeName name="com.cts.java.Reversenaturalnumbertest"/>
+    <fullyQualifiedTypeName name="com.cts.java.Reversenaturalnumber"/>
+    <fullyQualifiedTypeName name="com.cts.java.TrianglePrinting"/>
+    <fullyQualifiedTypeName name="com.cts.oops.getsetexample"/>
+    <fullyQualifiedTypeName name="com.cts.java.Table"/>
+    <fullyQualifiedTypeName name="com.cts.java.SingleDigit"/>
+    <fullyQualifiedTypeName name="com.cts.java.Lucky"/>
+    <fullyQualifiedTypeName name="com.cts.java.NaturalNumbers"/>
+    <fullyQualifiedTypeName name="com.cts.java.PrintingNumber"/>
+    <fullyQualifiedTypeName name="com.cts.service.Employeeservice"/>
+    <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="com.cts.bean.Employee"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,47 @@
+package com.cts.collection.list;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+	public void displayListUsingEhancedForLoop(ArrayList integerList)
+	{
+		for(Object obj : integerList)
+		{
+			System.out.println(obj);
+		}
+	}
+	public void displayListUsingEhancedForLoop(List list)
+	{
+		int size =list.size();
+		for(int i=0;i<size;i++)
+		{
+			System.out.println(list.get(i));
+		}
+		}
+	
+	public void displayListUsingEhancedForIterator(List list)
+	{
+		Iterator it = list.Iterator();
+		while(it.hasNext())
+		System.out.println(it.next());	
+		
+	}
+	
+	public static void main(String[] args) {
+		ArrayListDemo listDemo = new ArrayListDemo();
+		ArrayList integerList = new ArrayList();
+		integerList.add("10");
+		integerList.add("20");
+		integerList.add("30");
+		listDemo.displayListUsingEhancedForLoop(integerList);
+		ArrayList StringList = new ArrayList();
+		StringList.add("abc");
+		StringList.add("ram");
+		StringList.add("siva");
+		listDemo.displayListUsingEhancedForLoop(StringList);
+		
+	}
+}
+
+

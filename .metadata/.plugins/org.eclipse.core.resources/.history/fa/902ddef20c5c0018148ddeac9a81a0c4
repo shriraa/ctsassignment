@@ -1,0 +1,14 @@
+package com.cts.java.test;
+
+import com.cts.java.evenno;
+
+public class evennotest {
+
+	public static void main(String[] args) {
+		
+		Evenno a=new Evenno();
+		System.out.println(a.iseven(4));
+
+	}
+
+}

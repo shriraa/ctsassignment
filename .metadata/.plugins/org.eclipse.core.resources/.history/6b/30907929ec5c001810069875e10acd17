@@ -1,0 +1,12 @@
+package com.cts.serviceimpl;
+
+import java.awt.List;
+
+import com.cts.bean.Employee;
+import com.cts.service.Employeeservice;
+
+public class DepartmentServiceImpl implements Employeeservice {
+
+	
+
+}

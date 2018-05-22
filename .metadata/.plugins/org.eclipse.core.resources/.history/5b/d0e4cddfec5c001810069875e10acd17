@@ -1,0 +1,7 @@
+package com.cts.serviceimpl;
+
+
+
+public  class DepartmentServiceImpl implements Department {
+
+}

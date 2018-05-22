@@ -1,0 +1,16 @@
+package com.cts.array;
+
+public class Bignoarray {
+	        int num = new num[1,2];
+	{
+		if(num1>num2) 
+		{
+			return "x is greater";
+		}
+		else
+		{
+			return "y is greater";
+		}
+	}
+
+

@@ -1,0 +1,9 @@
+package com.cts.oops;
+
+public class Employeeoverride {
+	public boolean equals(object obj)
+	{
+		
+	}
+
+}

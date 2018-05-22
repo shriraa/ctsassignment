@@ -1,0 +1,17 @@
+package com.cts.java.test;
+
+public class Reversenaturalnumbertest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Reversenaturalnumbertest a = new Reversenaturalnumbertest();
+		a.displayreversenumber(10);
+  
+	}
+
+	private void displayreversenumber(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

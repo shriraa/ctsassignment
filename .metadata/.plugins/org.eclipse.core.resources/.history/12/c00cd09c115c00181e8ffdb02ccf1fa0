@@ -1,0 +1,14 @@
+package com.cts.java.test;
+
+import com.cts.java.Factorial;
+
+public class Factorialtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Factorial f= new Factorial();
+		System.out.println(f.Fact(5));
+
+	}
+
+}
