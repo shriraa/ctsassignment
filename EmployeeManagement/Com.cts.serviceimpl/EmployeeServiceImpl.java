@@ -7,52 +7,73 @@ import com.cts.service.Employeeservice;
 
 public class EmployeeServiceImpl implements Employeeservice{
 	
-	public List employeeList;
-	@Override
-	public Boolean addEmployee(Employee emp) {
-		// TODO Auto-generated method stub
-		employeeList.add(emp);
-		return true;
-	}
+	public class EmployeeImpl implements EmployeeService {
 
-	@Override
-	public Employee getEmployee(int id) {
-		// TODO Auto-generated method stub
-	if(get(emp.getId()==null))
-	{
-		return false;
-	}
-	employeeList.get(emp);
-	}
+		private List<Employee> empList;
 
-	@Override
-	public List getAllEmployees() {
-		// TODO Auto-generated method stub
-		return employeeList;
-	}
+		public EmployeeImpl() {
+			empList = new ArrayList<Employee>();
+		}
 
-	@Override
-	public List getAllEmployees(int salary) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		public boolean save(Employee emp) {
 
-	@Override
-	public List getAllEmployees(int minSalary, int maxSalary) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+			if (get(emp.getId()) != null) {
+				return false;
+			}
 
-	@Override
-	public Boolean deleteEmployee(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+			empList.add(emp);
 
-	@Override
-	public Boolean updateEmployee(Employee emp) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+			return true;
+		}
 
-}
+		public boolean update(Employee emp) {
+
+			if (get(emp.getId()) == null) {
+				return false;
+			}
+
+			empList.add(emp);
+
+			return true;
+		}
+
+		public boolean delete(int id) {
+			Employee emp = get(id);
+			if (emp == null) {
+				return false;
+			}
+
+			empList.remove(emp);
+
+			return true;
+		}
+
+		@Override
+		public Employee get(int id) {
+
+			for (Employee emp : empList) {
+				if (emp.getId() == id)
+					return emp;
+
+			}
+			return null;
+
+		}
+
+		public List<Employee> get() {
+			// TODO Auto-generated method stub
+			return empList;
+		}
+
+		public void display(Employee emp) {
+			System.out.println(emp.getId());
+			System.out.println(emp.getName());
+			System.out.println(emp.getSalary());
+		}
+
+		public void display(List<Employee> empList) {
+			for (Employee emp : empList) {
+				display(emp);
+			}
+
+		}

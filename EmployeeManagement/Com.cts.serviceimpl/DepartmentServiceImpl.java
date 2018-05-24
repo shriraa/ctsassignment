@@ -45,13 +45,19 @@ public  class DepartmentServiceImpl implements Departmentservice {
 	@Override
 	public Boolean deleteEmployeeFromDepartment(int empID, int deptID) {
 		// TODO Auto-generated method stub
-		return null;
+		Employee emp = emp.getId();
+		if(get(emp.getId()!==null))
+			return false;
+		empList.remove(emp);
 	}
 
 	@Override
 	public List getAllEmployees(int deptID) {
 		// TODO Auto-generated method stub
-		return null;
+		Employee emp = emp.getId();
+		if(get(emp.getId()!==null))
+			return false;
+		empList.add(emp);
 	}
 
 }

@@ -6,19 +6,18 @@ import com.cts.bean.Employee;
 
 public interface Employeeservice {
 		
-	public Boolean addEmployee(Employee emp);
-		
-	public Employee getEmployee(int id);
-		
-	public List getAllEmployees();
-		
-	public List getAllEmployees(int salary);
-		
-	public List getAllEmployees(int minSalary, int maxSalary);
-	
-	public Boolean deleteEmployee(int id);
+	public boolean save(Employee emp);
 
-	public Boolean updateEmployee(Employee emp);
+	public boolean update(Employee emp);
 
+	public boolean delete(int id);
+
+	public Employee get(int id);
+
+	public List<Employee> get();
+
+	public void display(Employee emp);
+
+	public void display(List<Employee> empList)
 
 }

@@ -18,7 +18,7 @@ public class ArrayListDemo {
 	}
 	public void displayListUsingForIterator(List list)
 	{
-		Iterator<?> it = list.iterator();
+		Iterator it = list.iterator();
 		while(it.hasNext())
 		System.out.println(it.next());
 		
@@ -26,12 +26,12 @@ public class ArrayListDemo {
 	
 	public static void main(String[] args) {
 		ArrayListDemo listDemo = new ArrayListDemo();
-		ArrayList integerList = new ArrayList();
+		ArrayList<Comparable> integerList = new ArrayList<Comparable>();
 		integerList.add(20);
 		integerList.add(10);
 		integerList.add(50);
 		listDemo.displayListUsingEhancedForLoop(integerList);
-		ArrayList StringList = new ArrayList();
+		ArrayList<Comparable> StringList = new ArrayList<Comparable>();
 		StringList.add("Shriraam");
 		StringList.add("Abinandhan");
 		StringList.add("Antony");
