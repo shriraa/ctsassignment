@@ -6,14 +6,14 @@ public class EmployeeTest {
 		// TODO Auto-generated method stub
 			{
 			Employee e1=new Employee(1000);
-			//e1.setId(100);
+			e1.setId(100);
 			e1.setName("shriraam");
 			e1.setSalary(10000);
 			System.out.println(e1.getId());
 			System.out.println(e1.getName());
 			System.out.println(e1.getSalary());
 			Employee e2=new Employee(1000);
-			//e2.setId(1000);
+			e2.setId(1000);
 			e2.setName("shriraam");
 			e2.setSalary(10000);
 			System.out.println(e2.getId());

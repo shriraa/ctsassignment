@@ -32,18 +32,18 @@ public class Employee {
 		if (getClass() != obj.getClass())
 			return false;
 		Employee other = (Employee) obj;
-		//if (address == null) {
-			//if (other.address != null)
-				//return false;//
-		//} else if (!address.equals(other.address))
-			//return false;
+		if (address == null) {
+			if (other.address != null)
+				return false;
+		} else if (!address.equals(other.address))
+			return false;
 		if (id != other.id)
 			return false;
-		//if (name == null) {
-			//if (other.name != null)
-				//return false;
-		//} else if (!name.equals(other.name))
-			//return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
 		if (Float.floatToIntBits(salary) != Float.floatToIntBits(other.salary))
 			return false;
 		return true;
