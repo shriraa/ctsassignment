@@ -5,75 +5,128 @@ import java.awt.List;
 import com.cts.bean.Employee;
 import com.cts.service.Employeeservice;
 
-public class EmployeeServiceImpl implements Employeeservice{
-	
-	public class EmployeeImpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeService {
+	private List<Employee> empList;
+    public EmployeeServiceImpl() {
+		empList = new ArrayList<Employee>();
+		new HashMap<Integer,List<Employee>>();
+	}
 
-		private List<Employee> empList;
+	@Override
+	public boolean save(Employee emp) throws DuplicateUserException {
 
-		public EmployeeImpl() {
-			empList = new ArrayList<Employee>();
-		}
-
-		public boolean save(Employee emp) {
-
+		try {
 			if (get(emp.getId()) != null) {
-				return false;
+				throw new DuplicateUserException();
+				//return false;
 			}
 
 			empList.add(emp);
+		} catch (Exception e) {
 
-			return true;
+			e.printStackTrace();
+
 		}
+		return true;
 
-		public boolean update(Employee emp) {
+	}
 
+	@Override
+	public boolean update(Employee emp) {
+
+		try {
 			if (get(emp.getId()) == null) {
+
 				return false;
 			}
 
-			empList.add(emp);
+			empList.remove(get(emp.getId()));
 
-			return true;
+			// Employee temp=get(emp.getId());
+			// empList.remove(temp);y
+			empList.add(emp);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
-		public boolean delete(int id) {
+		return true;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		try {
 			Employee emp = get(id);
 			if (emp == null) {
 				return false;
 			}
 
 			empList.remove(emp);
-
-			return true;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
-		@Override
-		public Employee get(int id) {
+		return true;
+	}
 
+	@Override
+	public Employee get(int id) {
+
+		try {
 			for (Employee emp : empList) {
 				if (emp.getId() == id)
 					return emp;
 
 			}
-			return null;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 
+	}
+
+	@Override
+	public List<Employee> get() {
+		
+		return empList;
+	}
+	@Override
+	public void display(Employee emp) {
+		System.out.println(emp.getId());
+		System.out.println(emp.getName());
+		System.out.println(emp.getSalary());
+		
+	}
+	
+	@Override
+	public void display(List<Employee> empList) {
+		for (Employee emp : empList) {
+			display(emp);
 		}
 
-		public List<Employee> get() {
-			// TODO Auto-generated method stub
-			return empList;
-		}
+	}
 
-		public void display(Employee emp) {
-			System.out.println(emp.getId());
-			System.out.println(emp.getName());
-			System.out.println(emp.getSalary());
+	@Override
+	public List<Employee> get(int min, int max) {
+		//List<Employee> emp=get();
+		List<Employee> salaryList=new ArrayList();
+		for(Employee employee:empList) {
+			if((employee.getSalary()>min)&&(employee.getSalary()<max))
+				salaryList.add(employee);
 		}
+		return salaryList;
+	}
 
-		public void display(List<Employee> empList) {
-			for (Employee emp : empList) {
-				display(emp);
-			}
-
+	@Override
+	public List<Employee> getemployeeGreaterAmount(int amount) {
+		List<Employee> salaryList=new ArrayList();
+		for(Employee employee:empList) {
+			if((employee.getSalary()>=amount))
+				salaryList.add(employee);
 		}
+		return salaryList;
+	}
+
+}

@@ -1,22 +1,31 @@
 package com.cts.service;
+import java.util.List;
+public interface DepartmentService {
+	// add new Department
+	public boolean add(Department department);
+    //Update the department
+	public boolean update(Department department);
+    //Delete the Department
+	public boolean delete(int id);
+    //Get The Particular Department
+	public Department get(int id);
+    //Get List of all Department
+	public List<Department> get();
+	// add Employee to Department
+	public boolean addEmployetoDepartment(int empId, int deptId);
+    //Remove Employee to Department
+	public boolean remove(int empId, int deptId);
+	// get all employes of Particular Department
+	public List<Employee> getEmployesinParticularDepartment(int deptId);
 
-import java.awt.List;
+	// get all Employees Salary Greater than Some amount also range
+	// in particular Department
+	public List<Employee> getEmployees(int deptId, int amount);
 
-public interface Departmentservice {
-		
-	public boolean addDepartment(Departmentservice dept);
-		
-	public Departmentservice Department (int id);
-		
-	public List getAllDepartments();
-	    
-	public boolean deleteDepartment(int id);   //cascade on delete?
-	    
-	public boolean updateDepartment(Departmentservice dept);
-		
-	public boolean addEmployeeToDepartment(int empID, int deptID);
-		
-	public boolean deleteEmployeeFromDepartment(int empID, int deptID);
-		
-	public List  getAllEmployees(int deptID);
+	// get all Employees Salary Greater than Some amount also range
+	// in particular Department
+	public List<Employee> getEmployees(int deptId, int min, int max);
+    //Display the Department List
+	public void display(List<Department> deptList);
+
 }

@@ -3,21 +3,25 @@ package com.cts.service;
 import java.awt.List;
 
 import com.cts.bean.Employee;
+public interface EmployeService {
 
-public interface Employeeservice {
-		
-	public boolean save(Employee emp);
-
+	// create
+	public boolean save(Employee emp) throws DuplicateUserException;
+	// update
 	public boolean update(Employee emp);
-
+	// delete
 	public boolean delete(int id);
-
+	// get
 	public Employee get(int id);
-
+	// get all
 	public List<Employee> get();
 
 	public void display(Employee emp);
 
-	public void display(List<Employee> empList)
-
+	public void display(List<Employee> empList);
+	//get all employees whose salary between min and max
+    public List<Employee> get (int min,int max);
+  //get all employees whose salary greater than Some Amount
+    public List<Employee> getemployeeGreaterAmount (int amount);
+   
 }
