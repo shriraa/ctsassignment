@@ -1,9 +1,0 @@
-package com.cts.java;
-
-public class Reversenaturalnumber {
-			public void displayreversenumber(int i)
-			{
-				for(int i1=10;i1>0;i1--)
-					System.out.println(i1);
-			}
-}
