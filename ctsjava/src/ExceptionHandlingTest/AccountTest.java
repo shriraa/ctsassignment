@@ -9,7 +9,6 @@ public class AccountTest {
 		try {
 			System.out.println(account.withdraw(6000));
 		} catch (MinimumBalanceException e) {
-
 			e.printStackTrace();
 		}
 	}
