@@ -66,7 +66,7 @@ public class ArrayListTest {
 
 		obj.add("shri");
 		obj.add("ram");
-		obj.add("Chaitanya");
+		obj.add("Dhoni");
 		obj.add("whatson");
 		obj.add("Arjun");
 		Collections.sort(obj);
@@ -82,12 +82,12 @@ public class ArrayListTest {
 		System.out.println("Currently array list" + obj);
 
 		/* Add element at the given index */
-		obj.add(0, "Rahul");
-		obj.add(1, "Justin");
+		obj.add(0, "ramshri");
+		obj.add(1, "Dhoni");
 
 		/* Remove elements from array list like this */
-		obj.remove("Chaitanya");
-		obj.remove("Harry");
+		obj.remove("rayudu");
+		obj.remove("Bravo");
 
 		System.out.println("Current array list " + obj);
 

@@ -1,8 +1,0 @@
-package com.cts.string;
-
-public class ffgh {
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", address=" + address + "]";
-	}
-}

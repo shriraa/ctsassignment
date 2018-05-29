@@ -1,8 +1,0 @@
-package com.cts.bean;
-
-public class Department {
-	 public int id;
-	public String name;
-	public List employees;
-
-}

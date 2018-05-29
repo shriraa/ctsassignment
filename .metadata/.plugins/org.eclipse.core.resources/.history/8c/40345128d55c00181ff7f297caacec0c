@@ -1,7 +1,0 @@
-package com.cts.java;
-
-public class Palindrome {
-		public String isPalindrome(int num)
-	
-
-}
