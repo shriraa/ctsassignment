@@ -4,10 +4,7 @@ import java.util.List;
 
 import com.cts.bean.Employee;
 import com.cts.dbserviceimpl.EmployeeDbServiceImpl;
-import com.cts.Exception.DuplicateUserException;
 import com.cts.service.EmployeService;
-import com.cts.serviceimpl.EmployeeServiceHashmapImpl;
-import com.cts.serviceimpl.EmployeeServiceImpl;
 
 public class EmployeServiceTest {
 	public static void main(String[] args) {
@@ -15,7 +12,7 @@ public class EmployeServiceTest {
 
 		Employee emp;
 
-	/*	emp = new Employee(101, "Saravanan", 2000,1);
+	/*	emp = new Employee(101, "Shriraam", 2000,1);
 		try {
 			empservice.save(emp);
 		} catch (DuplicateUserException e) {
@@ -29,7 +26,7 @@ public class EmployeServiceTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		emp = new Employee(103, "Sanjay", 6000,1);
+		emp = new Employee(103, "bravo", 6000,1);
 		try {
 			empservice.save(emp);
 		} catch (DuplicateUserException e) {

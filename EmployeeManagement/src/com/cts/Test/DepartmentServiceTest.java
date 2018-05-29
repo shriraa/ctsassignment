@@ -20,7 +20,7 @@ public class DepartmentServiceTest {
 		empservice = new EmployeeServiceHashmapImpl();
 		deptservice = new DepartmentServiceHashMapImpl(empservice);
 		Employee emp;
-		emp = new Employee(101, "Saravanan", 2000);
+		emp = new Employee(101, "shriraam", 2000);
 		try {
 			empservice.save(emp);
 		} catch (DuplicateUserException e) {
@@ -34,7 +34,7 @@ public class DepartmentServiceTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		emp = new Employee(103, "Sanjay", 6000);
+		emp = new Employee(103, "bravo", 6000);
 		try {
 			empservice.save(emp);
 		} catch (DuplicateUserException e) {
