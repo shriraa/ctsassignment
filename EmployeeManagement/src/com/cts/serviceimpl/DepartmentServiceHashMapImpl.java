@@ -11,8 +11,6 @@ public class DepartmentServiceHashMapImpl implements DepartmentService {
 	private Map<Integer, Department> departmentmap; 
 	private EmployeService empservice;
 	public DepartmentServiceHashMapImpl(EmployeService empservice) {
-		departmentmap=new HashMap<Integer, Department>();
-		//empservice = new EmployeeServiceImplHash();
 		this.empservice = empservice;
 		
 	}
@@ -58,7 +56,7 @@ public class DepartmentServiceHashMapImpl implements DepartmentService {
 	@Override
 	public List<Department> get() {
 
-		return new ArrayList<Department>((Collection<? extends Department>) departmentmap.values());
+		return new ArrayList<Department><? extends Department>)departmentmap.values());
 
 	}
 
