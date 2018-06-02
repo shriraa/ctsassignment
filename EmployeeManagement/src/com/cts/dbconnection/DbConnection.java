@@ -8,7 +8,7 @@ public class DbConnection {
 	private static String username = "sa";
 	private static String password = "";
 	// jdbc:h2:tcp://localhost/~/test
-	private static String url = "jdbc:h2:~/empmanagedb";
+	private static String url = "jdbc:h2:~/rterbot";
 	private static String driver = "org.h2.Driver";
 
 	private DbConnection() {
